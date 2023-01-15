@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head class = "container-fluid">
+        <title>Kevin Lau</title>
+        
+        <!-- BootStrap Addon -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+        <script src="https://unpkg.com/scroll-out/dist/scroll-out.min.js"></script>
+
+        <!-- Add CSS File-->
+        <link href="main.css" rtpe="text/css" rel="stylesheet" >
+        
+        <!-- Header Section-->
+        <div id = "header">
+            <nav id="headers" class="navbar navbar-expand-lg bg-secondary-emphasis fixed-top bg-black container-fluid" data-bs-theme="dark">
+                <div class="container-fluid">
+                    <!-- Main Name Section-->
+                <a class="navbar-brand name" href="Kevin Lau Website.html" style = "padding-top: 5px; padding-left: 20vw; padding-right: 3vw; padding-bottom:5px; font-weight:bold;">Kevin Lau</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                
+                <div class="collapse navbar-collapse headings" id="navbarNavDropdown">
+                    <ul class="navbar-nav" style = "margin: auto; padding-top:2px">
+                    <!-- About Section-->
+                    <li class="nav-item underline-effect">
+                        <a class="nav-link" aria-current="page" href="#about">About</a>
+                    </li>
+                    <!-- Projects Section-->
+                    <li class="nav-item dropdown underline-effect">
+                        <a class="nav-link dropdown-toggle" aria-current="page" href="#projects" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Projects
+                        </a>
+                        <ul class="dropdown-menu">
+                            <!--Projects Dropdown Here-->
+                        <li><a class="dropdown-item" href="#">Connect 4 Online</a></li>
+                        <li><a class="dropdown-item" href="#">Cosine Law Assistant</a></li>
+                        <li><a class="dropdown-item" href="#">Bee Simulator RPG</a></li>
+                        <li><a class="dropdown-item" href="#">Pong & Atari</a></li>
+                        </ul>
+                    </li>
+                    <!--Contact Info (Scrolls Down)-->
+                    <li class="nav-item headings underline-effect">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                    <!--Resume Reroute-->
+                    <li class="nav-item headings underline-effect">
+                        <a class="nav-link" href="Assets/Resume.pdf">Resume</a>
+                    </li>
+                    </ul>
+                </div>
+                </div>
+            </nav>
+        </div>
+        <!--Header Section Ends Here-->
+        <div  data-spy="scroll" data-target="#headers" data-offset="0">
+        <!--Intro Starts Here-->
+        <div id = "intro" >
+            <!--Text Here-->
+            <p class="introstart" style="font-size: 27px">A Genius, Software Engineer, and Model walk into a bar!</b>
+            <h1 class="introstart" style="font-size: 23px">the bartender asks, "Table for One?", how is this possible...</h1>
+            <h1 class = "introstart" style="font-size: 60px; text-align: right; color:white; font-weight:bold; padding-top:10px"> Hi! My Name Is Kevin Lau!!!</h1>
+            <br>
+            <!--Button To Go To About Me-->
+            <button type="button" class="btn btn-outline-light" style = "margin-top: 3vw; margin-right: 4vw; float: right;">
+                <a class = "nav-link text-white" href = #about>Click Here To Find Out More About Me :D</a>
+            </button>
+        </div>
+        <!-- Intro Ends Here-->
+        <!-- About Me Starts Here-->
+        <section>
+            <div id = "about" class="scroll">
+                <h2 style="font-size:60px; font-weight:bold; text-decoration-line: underline;">Who Am I?</h2>
+                <div class = "row" style ="margin-top: 3vh; display: flex; align-items: center; margin-bottom: 3vh;">
+                    <div class="col-lg-2"></div>
+                    <div class="col-lg-4 center-block kevin-pic">
+                        <h1><img src="Assets/Kevin-Pic-1.jpg" style = "width: 100%; float:right; padding-right:7vh; padding-left:7vh;"></h1>
+                    </div>
+                    <div class="col-lg-4">
+                        <p id = "about_text"> If you couldn't tell already, my name is Kevin Lau!!!
+                        <br> <br> I first took an interest in CS in grade 11, and my passion for it has only increased since then! What I love about CS is the creative freedom you get! Right now, I am a 1B Computer Science and Business Administration Double Degree student studying at both Waterloo and Laurier!
+                        <br> <br> As you might be able to tell, I am extremely humble. In my spare time, I like tetris, solving puzzles (leetcode :D), and camping!!!
+                        <br> <br> Currently, I am looking for an internship  related to web development or software engineering for summer 2023!!! So if you have any interesting opportunities, feel free to contact me :DDD
+                        <br>
+                        <button type="button" class="btn btn-light text-center" style = "margin-top: 3vw; margin-right: 4vw; color:black; margin-top: 3vh;">
+                            <a class = "nav-link" href = #projects style="text-align:center">Check out my projects!!!</a>
+                        </button>
+                        </p>
+                    </div>
+                </div>
+            </div>  
+        </section>
+        <!-- About Me Ends Here-->
+        <!-- Projects Start Here-->
+        <div id = "projects" class="container-fluid">
+            <h1 style = "font-size:60px; font-weight:bold; color:white; text-align: center; padding-bottom: 4vh;">Projects</h1>
+                <div class = "row" style ="margin-top: 3vh; display: flex; align-items: center; margin-bottom: 3vh;">
+                    <div class="col-lg-1" style="padding-right: 9vw;"></div>
+                    <!-- Bee Simulator RPG Carosel-->
+                    <div id="carouselAutoplaying1" class=" bighover carousel slide col-lg-4 reveal-left" style="width:35%; margin-right:-5vw" data-bs-ride="carousel">
+                        <h1 id="muck" style = "font-size:40; color:white; font-weight:bold; text-align: center; border-color: white; border-style: solid; border-width: .5px; margin-bottom: 1.5vh; border-radius:0rem"> Bee Simulator RPG </h1>
+                        <h1><div id="carouselIndicator1" class="carousel slide">
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#carouselIndicator1" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                <button type="button" data-bs-target="#carouselIndicator1" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                <button type="button" data-bs-target="#carouselIndicator1" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                <button type="button" data-bs-target="#carouselIndicator1" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                                <button type="button" data-bs-target="#carouselIndicator1" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                            </div>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="Assets/Bee RPG/RPG-Map-Selector.png" class="d-block w-100" alt="Map Options">
+                                    <!--<div class="carousel-caption d-none d-md-block">
+                                        <p>Two Maps You Can Play On!</p>
+                                    </div>-->
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="Assets/Bee RPG/RPG-Game-Fight.png" class="d-block w-100" alt="...">
+                                    <!--<div class="carousel-caption d-none d-md-block">
+                                        <p>You Can Fight Enemies That You Encounter!</p>
+                                    </div>-->
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="Assets/Bee RPG/RPG-Game1.png" class="d-block w-100" alt="...">
+                                    <!--<div class="carousel-caption d-none d-md-block">
+                                        <p>Interactive Map With Stat Boosters!</p>
+                                    </div>-->
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="Assets/Bee RPG/RPG-Animation.gif" class="d-block w-100" alt="...">
+                                    <!--<div class="carousel-caption d-none d-md-block">
+                                        <p>There Are Many Moves You Can Use!</p>
+                                    </div>-->
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="Assets/Bee RPG/RPG-Game-Fight2.png" class="d-block w-100" alt="...">
+                                    <!--<div class="carousel-caption d-none d-md-block">
+                                        <p>Try To Survive The Final Boss!</p>
+                                    </div>-->
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselAutoplaying1" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselAutoplaying1" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div></h1>
+                        <h1 style="text-align: center; margin-top: 5vh;">
+                            <button type="button" class="btn btn-outline-light mx-auto">
+                                <a class = "nav-link text-white" href = #about>See More</a>
+                            </button>
+                        </h1>
+                    </div>
+    
+                    <div class="col-lg-2"></div>
+    
+                    <!--Pong & Atari-->
+                    <div id="carouselAutoplaying2" class="bighover carousel slide col-lg-4 reveal-right" style="width:35%" data-bs-ride="carousel">
+                        <h1 style = "font-size:40; color:white; font-weight:bold; text-align: center; border-color: white; border-style: solid; border-width: .5px; margin-bottom: 1.5vh; border-radius:0rem"> Pong & Atari </h1>
+                        <h1><div id="carouselIndicators2" class="carousel slide">
+                                <div class="carousel-indicators">
+                                    <button type="button" data-bs-target="#carouselIndicators2" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                    <button type="button" data-bs-target="#carouselIndicators2" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                    <button type="button" data-bs-target="#carouselIndicators2" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                    <button type="button" data-bs-target="#carouselIndicators2" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                                    <button type="button" data-bs-target="#carouselIndicators2" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                                    <button type="button" data-bs-target="#carouselIndicators2" data-bs-slide-to="5" aria-label="Slide 6"></button>
+                                </div>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="Assets/Pong & Atari/Pong-start.png" class="d-block w-100" alt="Map Options">
+                                    <!--<div class="carousel-caption d-none d-md-block">
+                                        <p>Two Maps You Can Play On!</p>
+                                    </div>-->
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="Assets/Pong & Atari/Pong Winner.png" class="d-block w-100" alt="...">
+                                    <!--<div class="carousel-caption d-none d-md-block">
+                                        <p>You Can Fight Enemies That You Encounter!</p>
+                                    </div>-->
+                                </div>
+                                <div class="carousel-item">
+                                    <video width = 97.5% loop muted autoplay>
+                                        <source src="Assets/Pong & Atari/Pong-Gameplay-1.mp4"> 
+                                    </video>
+                                    <!--<div class="carousel-caption d-none d-md-block">
+                                        <p>There Are Many Moves You Can Use!</p>
+                                    </div>-->
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="Assets/Pong & Atari/Atari-Start.png" class="d-block" style="width:100%" alt="...">
+                                    <!--<div class="carousel-caption d-none d-md-block">
+                                        <p>Interactive Map With Stat Boosters!</p>
+                                    </div>-->
+                                </div>
+                                <div class="carousel-item">
+                                    <video width = 98% loop muted autoplay>
+                                        <source src="Assets/Pong & Atari/Atari-Gameplay-1.mp4"> 
+                                    </video>
+                                    <!--<div class="carousel-caption d-none d-md-block">
+                                        <p>There Are Many Moves You Can Use!</p>
+                                    </div>-->
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="Assets/Pong & Atari/Atari-Gameplay.png" class="d-block" style="width:100%" alt="...">
+                                    <!--<div class="carousel-caption d-none d-md-block">
+                                        <p>Try To Survive The Final Boss!</p>
+                                    </div>-->
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselAutoplaying2" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselAutoplaying2" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div></h1>
+                        <h1 style="text-align: center; margin-top: 5vh;">
+                            <button type="button" class="btn btn-outline-light mx-auto">
+                                <a class = "nav-link text-white" href = #about>See More</a>
+                            </button>
+                        </h1>
+                    </div>
+                </div>
+
+            <!--Row 2-->
+            <div id = "projects" class="container-fluid">
+                <div class = "row" style ="margin-top: 3vh; display: flex; align-items: center; margin-bottom: 3vh;">
+                    <div class="col-lg-1" style="padding-right: 9vw;"></div>
+                    <!-- Bee Simulator RPG Carosel-->
+                    <div id="carouselAutoplaying3" class=" bighover carousel slide col-lg-4 reveal-left" style="width:35%; margin-right:-5vw" data-bs-ride="carousel">
+                        <h1 id="muck" style = "font-size:40; color:white; font-weight:bold; text-align: center; border-color: white; border-style: solid; border-width: .5px; margin-bottom: 1.5vh; border-radius:0rem"> Bee Simulator RPG </h1>
+                        <h1><div id="carouselIndicator3" class="carousel slide">
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#carouselIndicator3" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                <button type="button" data-bs-target="#carouselIndicator3" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                <button type="button" data-bs-target="#carouselIndicator3" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                <button type="button" data-bs-target="#carouselIndicator3" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                                <button type="button" data-bs-target="#carouselIndicator3" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                            </div>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="Assets/Bee RPG/RPG-Map-Selector.png" class="d-block w-100" alt="Map Options">
+                                    <!--<div class="carousel-caption d-none d-md-block">
+                                        <p>Two Maps You Can Play On!</p>
+                                    </div>-->
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="Assets/Bee RPG/RPG-Game-Fight.png" class="d-block w-100" alt="...">
+                                    <!--<div class="carousel-caption d-none d-md-block">
+                                        <p>You Can Fight Enemies That You Encounter!</p>
+                                    </div>-->
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="Assets/Bee RPG/RPG-Game1.png" class="d-block w-100" alt="...">
+                                    <!--<div class="carousel-caption d-none d-md-block">
+                                        <p>Interactive Map With Stat Boosters!</p>
+                                    </div>-->
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="Assets/Bee RPG/RPG-Animation.gif" class="d-block w-100" alt="...">
+                                    <!--<div class="carousel-caption d-none d-md-block">
+                                        <p>There Are Many Moves You Can Use!</p>
+                                    </div>-->
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="Assets/Bee RPG/RPG-Game-Fight2.png" class="d-block w-100" alt="...">
+                                    <!--<div class="carousel-caption d-none d-md-block">
+                                        <p>Try To Survive The Final Boss!</p>
+                                    </div>-->
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselAutoplaying3" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselAutoplaying3" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div></h1>
+                        <h1 style="text-align: center; margin-top: 5vh;">
+                            <button type="button" class="btn btn-outline-light mx-auto">
+                                <a class = "nav-link text-white" href = #about>See More</a>
+                            </button>
+                        </h1>
+                    </div>
+    
+                    <div class="col-lg-2"></div>
+    
+                    <!--Pong & Atari-->
+                    <div id="carouselAutoplaying4" class="bighover carousel slide col-lg-4 reveal-right" style="width:35%" data-bs-ride="carousel">
+                        <h1 style = "font-size:40; color:white; font-weight:bold; text-align: center; border-color: white; border-style: solid; border-width: .5px; margin-bottom: 1.5vh; border-radius:0rem"> Pong & Atari </h1>
+                        <h1><div id="carouselIndicators4" class="carousel slide">
+                                <div class="carousel-indicators">
+                                    <button type="button" data-bs-target="#carouselIndicators4" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                    <button type="button" data-bs-target="#carouselIndicators4" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                    <button type="button" data-bs-target="#carouselIndicators4" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                    <button type="button" data-bs-target="#carouselIndicators4" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                                    <button type="button" data-bs-target="#carouselIndicators4" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                                    <button type="button" data-bs-target="#carouselIndicators4" data-bs-slide-to="5" aria-label="Slide 6"></button>
+                                </div>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="Assets/Pong & Atari/Pong-start.png" class="d-block w-100" alt="Map Options">
+                                    <!--<div class="carousel-caption d-none d-md-block">
+                                        <p>Two Maps You Can Play On!</p>
+                                    </div>-->
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="Assets/Pong & Atari/Pong Winner.png" class="d-block w-100" alt="...">
+                                    <!--<div class="carousel-caption d-none d-md-block">
+                                        <p>You Can Fight Enemies That You Encounter!</p>
+                                    </div>-->
+                                </div>
+                                <div class="carousel-item">
+                                    <video width = 97.5% loop muted autoplay>
+                                        <source src="Assets/Pong & Atari/Pong-Gameplay-1.mp4"> 
+                                    </video>
+                                    <!--<div class="carousel-caption d-none d-md-block">
+                                        <p>There Are Many Moves You Can Use!</p>
+                                    </div>-->
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="Assets/Pong & Atari/Atari-Start.png" class="d-block" style="width:100%" alt="...">
+                                    <!--<div class="carousel-caption d-none d-md-block">
+                                        <p>Interactive Map With Stat Boosters!</p>
+                                    </div>-->
+                                </div>
+                                <div class="carousel-item">
+                                    <video width = 98% loop muted autoplay>
+                                        <source src="Assets/Pong & Atari/Atari-Gameplay-1.mp4"> 
+                                    </video>
+                                    <!--<div class="carousel-caption d-none d-md-block">
+                                        <p>There Are Many Moves You Can Use!</p>
+                                    </div>-->
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="Assets/Pong & Atari/Atari-Gameplay.png" class="d-block" style="width:100%" alt="...">
+                                    <!--<div class="carousel-caption d-none d-md-block">
+                                        <p>Try To Survive The Final Boss!</p>
+                                    </div>-->
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselAutoplaying4" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselAutoplaying4" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div></h1>
+                        <h1 style="text-align: center; margin-top: 5vh;">
+                            <button type="button" class="btn btn-outline-light mx-auto">
+                                <a class = "nav-link text-white" href = #about>See More</a>
+                            </button>
+                        </h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Projects End Here-->
+        <!--Contact Starts Here-->
+        <div id="contact">
+            <h1 style="padding-top: 5vh; text-align: center; font-weight: bold">Contact</h1>
+        </div></div>
+        <!--Scroll Down Script-->
+        <script src="Assets/scroll-out.js"></script>
+        <script type = "text/javascript">
+            ScrollOut({
+                targets: 'h2,h3,h1,p,img,button,#carouselAutoplaying1'
+            })
+        </script>
+    </body>
+</html>
