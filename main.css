@@ -248,7 +248,7 @@ section{
 
 .scroll p[data-scroll="in"] {
     transform: scaleX(1);
-    transition-delay: 1s;
+    transition-delay: 0s;
 }
 
 .scroll p:before {
@@ -265,7 +265,7 @@ section{
 
 .scroll p[data-scroll="in"]:before {
     transform: scaleX(0);
-    transition-delay: 1.5s;
+    transition-delay: .5s;
 }
 
 .scroll h1 {
@@ -279,7 +279,7 @@ section{
 
 .scroll h1[data-scroll="in"] {
     transform: scaleX(1);
-    transition-delay: 1s;
+    transition-delay: 0s;
 }
 
 .scroll h1:before {
@@ -296,14 +296,14 @@ section{
 
 .scroll h1[data-scroll="in"]:before {
     transform: scaleX(0);
-    transition-delay: 1.5s;
+    transition-delay: .5s;
 }
 
 .reveal-left h1{
     position: relative;
     transform: translateX(-4vw);
     opacity: 0;
-    transition: 1s all ease;
+    transition: .75s all ease;
     transform-origin: left;
   }
   
@@ -316,7 +316,7 @@ section{
     position: relative;
     transform: translateX(4vw);
     opacity: 0;
-    transition: 1s all ease;
+    transition: .75s all ease;
     transform-origin: left;
 }
   
