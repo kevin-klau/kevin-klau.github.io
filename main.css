@@ -103,7 +103,7 @@ section{
 
 #github-icon:hover{
     color:rgb(37, 167, 65);
-    transform:scale(1.1);
+    transform:scale(1.2);
 }
 
 #linkedin-icon{
@@ -113,7 +113,7 @@ section{
 
 #linkedin-icon:hover{
     color:rgb(42, 144, 216);
-    transform:scale(1.1);
+    transform:scale(1.2);
 }
 
 #email-icon{
@@ -123,7 +123,7 @@ section{
 
 #email-icon:hover{
     color:rgb(244, 166, 70);
-    transform:scale(1.1);
+    transform:scale(1.2);
 }
 
 
@@ -287,7 +287,7 @@ section{
     position: absolute;
     top:0;
     left:7vh;
-    width: 78%;
+    width: 78.5%;
     height: 100%;
     background: rgb(255, 255, 255);
     transform-origin: top;
@@ -334,6 +334,6 @@ section{
 }
 
 .bighover:hover{
-    transform:scale(1.1);
+    transform:scale(1.13);
 }
 
