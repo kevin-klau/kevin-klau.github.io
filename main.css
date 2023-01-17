@@ -85,25 +85,41 @@ section{
     color: white;
     width: 100%;
     padding-top:6vh;
-    padding-bottom:10vh;
+    padding-bottom:2vh;
+}
+
+hr{
+    width:95%;
+    transform: translate(2.5%,0);
+    border-top: 5px solid white;
+    height: 2px;
 }
 
 #social-icons{
     align-items:center;
-    padding-top: 2vh;
+    padding-top: 3vh;
     display: inline-block;
     left: 50%;
     transform: translate(-50%, 0);
+    padding-bottom: 0vh;
+}
+
+#copyright{
+    background-color:rgb(20, 20, 20);
+    color:white;
+    padding-top:vh;
+    padding-bottom:3vh;
 }
 
 #github-icon{
+    position: relative;
     color:rgb(188, 255, 202);
     transition: 0.3s all ease-in-out;
 }
 
 #github-icon:hover{
     color:rgb(37, 167, 65);
-    transform:scale(1.2);
+    transform:translateY(-2vh);
 }
 
 #linkedin-icon{
@@ -113,7 +129,7 @@ section{
 
 #linkedin-icon:hover{
     color:rgb(42, 144, 216);
-    transform:scale(1.2);
+    transform:translateY(-2vh);
 }
 
 #email-icon{
@@ -123,7 +139,7 @@ section{
 
 #email-icon:hover{
     color:rgb(244, 166, 70);
-    transform:scale(1.2);
+    transform:translateY(-2vh);
 }
 
 
@@ -204,6 +220,18 @@ section{
 
 .row{
     --bs-gutter-x:0rem;
+}
+
+.project-heading{
+    font-size:40; 
+    color:white; 
+    font-weight:bold; 
+    text-align: center; 
+    border-color: white; 
+    border-style: solid; 
+    border-width: .5px; 
+    margin-bottom: 1.5vh; 
+    border-radius:0rem;
 }
 
 .scroll h2 {
@@ -336,4 +364,3 @@ section{
 .bighover:hover{
     transform:scale(1.13);
 }
-
