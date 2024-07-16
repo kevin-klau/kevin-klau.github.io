@@ -4,7 +4,7 @@ import './Quick.css';
 function  Main() {
 
      return (
-          <div>
+          <div id="quickBackground">
 
 
           </div>
