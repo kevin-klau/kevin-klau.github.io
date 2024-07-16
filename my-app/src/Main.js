@@ -1,6 +1,6 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import './main.css';
-import Front from './Boxes/Front.js'
+import Front from './Boxes/Front.js';
 
 function debounce(func, wait) {
     let timeout;
@@ -11,6 +11,8 @@ function debounce(func, wait) {
 }
 
 function Main() {
+    const [isTextVisible, setTextVisible] = useState(false);
+
     useEffect(() => {
         const boxes = document.querySelectorAll('.box');
         let currentIndex = 0;
@@ -116,11 +118,16 @@ function Main() {
             zoomIn(currentIndex);
         }
 
+        // Show text after 2 seconds
+        setTimeout(() => {
+            setTextVisible(true);
+        }, 6000);
+
     }, []);
 
     return (
         <div className="container">
-            <div className="box" id="box1"><Front>Box 1</Front></div>
+            <div className="box" id="box1"><Front>{isTextVisible ? "KEVIN LAU" : "Box 1"}</Front></div>
             <div className="box" id="box2">Box 2</div>
             <div className="box" id="box3">Box 3</div>
             <div className="box" id="box4">Box 4</div>

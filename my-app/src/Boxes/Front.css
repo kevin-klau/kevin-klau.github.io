@@ -37,40 +37,41 @@
      box-shadow: 0 12px 12px 0px rgb(0,0,0,0.4);
      text-align:center;
      position: absolute;
-     justify-content: space-between; /* This will push the button to the bottom */
 }
 
 
 #typeContainer{
-     position:relative;
+     text-align: center;
+     padding-top: 10vh;
+     
 }
 
 #typedtext {
-     color:#FDAB5F;
+     color:#FDAB5F;  
+     left: 0;
+     right: 0;
+
      font-size: calc(3vh + 3.3vw);
      word-wrap: break-word; /* Deprecated */
      overflow-wrap: break-word; /* Modern equivalent */
      white-space: normal; /* Allow text to wrap naturally */
-     margin-left: 5vw;
-     margin-right: 5vw;
-     margin-top: 9vh;
+     margin-left:auto;
+     margin-right:auto;
      text-align: center;
-     display:inline-block;
-     position:-webkit-sticky;
+     height: 25vh;
 }
 
 #typedtext2{
      font-family: 'Raleway Light';
      color: rgb(225, 225, 225);
-     font-size: calc(1vh + 0.5vw);
+     font-size: calc(1vh + 0.75vw);
      line-height: calc(2vh + 1vw);
      word-wrap: break-word; /* Deprecated */
      overflow-wrap: break-word; /* Modern equivalent */
      white-space: normal; /* Allow text to wrap naturally */
      margin-left: 5vw;
      margin-right: 5vw;
-     margin-top: 3vh;
-     position:relative;
+
 }
 
 #typedtext .typed-cursor {
@@ -98,11 +99,11 @@
 #KEVINLAU {
      font-family: 'Raleway Light';
      color:white;
-     font-size: calc(3vh + 10vw);
-     margin-top: 1vw;
+     font-size: calc(9vh + 7vw);
+     margin-top: calc(6vh - 3vw);
      opacity: 0;
      transition: opacity 4s ease-in-out;
-     margin-bottom: 0px;
+     margin-bottom: 0;
 }
    
 #KEVINLAU.fade-in {
@@ -111,14 +112,49 @@
 
 #page1button {
      align-self: center; /* Center the button horizontally */
-     margin-bottom: 10px; /* Optional: some space at the bottom */
-     display: flex;
-     align-items: center;
+     margin-bottom: 5vh; /* Optional: some space at the bottom */
+     margin-top: -3vh;
      padding: 10px;
      font-size: 16px;
-     background-color: #007bff; /* Example button style */
+     background-color: rgba(0,0,0,0); /* Example button style */
      color: white;
      border: none;
-     border-radius: 5px;
      cursor: pointer;
+     margin-left: auto;
+     margin-right: auto;
+     font-size: 6vw;
+     padding: 0;
+     margin-top: 0;
+     animation: floatUpDown 3s ease-in-out infinite;
+     opacity: 0;
+     transition: color 0.25s;
+     transition: opacity 4s ease-in-out;
+
+     width: 20%;
+
 }
+
+#page1button.fade-in {
+     opacity: 1;
+}
+
+#page1buttonrow {
+     justify-content: center;
+     width: 100%;
+}
+
+#page1button:hover {
+     color:#FDAB5F !important; 
+}
+
+@keyframes floatUpDown {
+     0% {
+         transform: translateY(0);
+     }
+     50% {
+         transform: translateY(-15px); /* Adjust the value to control the distance */
+     }
+     100% {
+         transform: translateY(0);
+     }
+ }

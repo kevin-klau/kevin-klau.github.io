@@ -2,6 +2,10 @@ import React, { useEffect, useRef, useState } from 'react';
 import Typed from 'typed.js';
 import './Front.css';
 import { FaChevronDown } from "react-icons/fa";
+//import { RiArrowDownWideFill } from "react-icons/fa";
+import { PiCaretDownThin } from "react-icons/pi";
+
+
 
 const TypedComponent = ({ onComplete }) => {
   const el1 = useRef(null);
@@ -10,13 +14,14 @@ const TypedComponent = ({ onComplete }) => {
   const typed2 = useRef(null);
   const [showSecond, setShowSecond] = useState(false);
 
+
   useEffect(() => {
     const options1 = {
       strings: [
         "A 1000 IQ Man,",  
         "A Genius, The Next Bill Gates",
         "A Genius, Entrepreneur, ",
-        "A Genius, Entrepreneur, and a Software Developer"
+        "A Genius, Entrepreneur, and a <br> Software Developer"
       ],
       typeSpeed: 30,
       backSpeed: 20,
@@ -43,13 +48,13 @@ const TypedComponent = ({ onComplete }) => {
     if (showSecond) {
       const options2 = {
         strings: [
-          "all walk into a bar. The Bartender asks, \"Table for One?\" How is this possible??? <br> Well that man is..."
+          "all walk into a bar. The Bartender asks, \"Table for One?\" How is this possible??? <br> Well it's because that man is..."
         ],
-        typeSpeed: 25,
-        startDelay: 300,
+        typeSpeed: 15,
+        startDelay: 10,
         loop: false,
         showCursor: true,
-        cursorChar: '|',
+        cursorChar: '_',
         onComplete: () => {
           typed2.current.cursor.remove(); // Remove cursor after typing is complete
           onComplete(); // Trigger the fade-in for KEVIN LAU
@@ -57,7 +62,6 @@ const TypedComponent = ({ onComplete }) => {
       };
 
       typed2.current = new Typed(el2.current, options2);
-      setTimeout(1000);
       return () => {
         //typed2.current.destroy();
       };
@@ -66,13 +70,19 @@ const TypedComponent = ({ onComplete }) => {
 
   return (
     <div id="typeContainer">
-        <div id="typedtext"><span ref={el1}></span></div>
+        <div id="typedtext"><span className="widththing" ref={el1}/></div>
         {showSecond && <div id="typedtext2"><span ref={el2}></span></div>}
     </div>
   );
 };
 
-const Main = () => {
+function Main ({func}) {
+
+     function nextBox() {
+          window.scrollTo({top:1000});
+          console.log("bruh");
+       }
+     
   const [showKevinLau, setShowKevinLau] = useState(false);
 
   return (
@@ -80,7 +90,7 @@ const Main = () => {
       <div className="thebackground">
         <TypedComponent onComplete={() => setShowKevinLau(true)}/>
         <h1 id="KEVINLAU" className={showKevinLau ? 'fade-in' : ''}> KEVIN LAU </h1>
-        <button type="button" id="page1button"><FaChevronDown/></button>
+        <div id="page1buttonrow" ><button type="button" id="page1button" className={showKevinLau ? 'fade-in' : ''} onClick={func}><PiCaretDownThin id="downarrow"/></button></div>
       </div>
     </div>
   );
